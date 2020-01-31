@@ -1,0 +1,26 @@
+<html>
+  <head>
+    <title>Curso JavaScript - exercicio 3 - Escreva uma função que verifique se o vetor de habilidades passado possui a habilidade "Javascript"
+      e retorna um booleano true/false caso exista ou não.
+    </title>
+  </head>
+  <body>
+    <script>
+   
+    var skills = ["Javascript", "ReactJS", "React Native"];
+    
+    function temHabilidade(skills) {
+       //indexOf é utilizado para recuperar a posição do primeiro elemento em uma string.
+       //Verificar a existencia de um termo ou a sua posição em uma string. indexOF (indice, pontoinicial)
+
+      var resultado = skills.indexOf("Javascript", 0); 
+      return resultado >= 0 ? true : false;
+
+    }     
+    var resultado = temHabilidade("Javascript");
+    console.log(resultado);
+
+     </script>
+    </body>
+</html>
+
